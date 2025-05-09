@@ -1,12 +1,15 @@
+import { Link } from "react-scroll";
+
 const NavbarLogo = () => {
   return (
     <div>
-      <h1 className="text-white  text-2xl sm:hidden md:block">
-        NPQ 
-      </h1>
-      <h1 className="text-white font-special font-extrabold text-4xl md:hidden sm:block">
-        NPQ
-      </h1>
+        <Link spy={true} smooth={true} duration={500} offset={-120} to="main">
+          <img 
+            src="/images/logo04.png" 
+            alt="logo" 
+            className="h-16 w-auto object-contain cursor-pointer" 
+          />
+        </Link>
     </div>
   );
 };
